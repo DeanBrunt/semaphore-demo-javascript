@@ -130,10 +130,3 @@ promotions:
   - name: sandbox
     pipeline_file: pipeline_2.yml
     deployment_target: sandbox
-    parameters:
-      env_vars:
-        - required: true
-          options: []
-          default_value: ''
-          description: ''
-          name: ''
