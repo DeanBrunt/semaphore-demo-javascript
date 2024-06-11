@@ -1,0 +1,17 @@
+version: v1.0
+name: Pipeline 3
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Deploy
+    task:
+      jobs:
+        - name: Deploy
+          commands:
+            - echo "deploy"
+promotions:
+  - name: prod
+    pipeline_file: pipeline_4.yml
+    deployment_target: prod
